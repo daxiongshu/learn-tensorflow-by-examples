@@ -5,9 +5,13 @@ import matplotlib.image as mpimg
 
 def convert(size, x1, y1, x2, y2):
     """
-    (x1, y1) upper left point
-    (x2, y2) lower right point
-    (x, y) center
+    input:
+        size: width, height
+        (x1, y1) upper left point
+        (x2, y2) lower right point
+    output:
+        (x, y) center, normalized
+        (w, h) width,height, normalized
     """
     dw = 1.0/size[0]
     dh = 1.0/size[1]
